@@ -1,6 +1,7 @@
 // jmm-currencyconverter.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //By: Jason Martinez
-//Date: 02/06/2020
+//Date Created: 02/06/2020
+//Date Finished: 02/11/2020
 //Description: This program will convert US Dollars (USD) based on user input into British Pound Sterling (GBP).
 
 #include <iostream>
