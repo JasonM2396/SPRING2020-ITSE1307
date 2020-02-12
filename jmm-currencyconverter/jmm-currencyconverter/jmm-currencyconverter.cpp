@@ -10,8 +10,8 @@ int main()
 {
 //Variables
 
-	float usDollar = 0;
-	float poundSterling = 0;
+	float usDollar = 0.0f;
+	float poundSterling = 0.0f;
 
 //Input
 
@@ -22,9 +22,9 @@ int main()
 
 //Processing
 
-	poundSterling = usDollar / 1.2964;
+	poundSterling = usDollar / 1.29f;
 
 //Output
 
-	std::cout << "$" << usDollar << " USD converted to GBP: " << poundSterling << "\n";
+	std::cout << usDollar << " US Dollars converted to " << poundSterling << " British Pound Sterling.\n";
 }
