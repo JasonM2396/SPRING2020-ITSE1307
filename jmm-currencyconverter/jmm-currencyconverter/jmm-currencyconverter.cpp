@@ -10,8 +10,8 @@ int main()
 {
 //Variables
 
-	float usDollar;
-	float poundSterling;
+	float usDollar = 0;
+	float poundSterling = 0;
 
 //Input
 
