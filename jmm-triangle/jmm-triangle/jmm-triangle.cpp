@@ -2,7 +2,7 @@
 // By: Jason Martinez
 // Date: 2/24/20
 // Description: This program will determine if a triangle is a right triangle based on what length the user inputs for each side.
-// Credits and citations for any code used as a reference for this program are listed on line 41.
+// Credits and citations for any code used as a reference for this program are listed on line 50.
 
 #include <iostream>
 #include <cmath>
@@ -26,14 +26,22 @@ int main()
 
 	fltSideC = pow(fltSideC, 2.0f); // This is placed to added the power subscript to the user input for Side C.
 
-	// Resulting Output
+	// Processing the Output
 	cout << "Side A + Side B = " << pow(fltSideA, 2.0f) + pow(fltSideB, 2.0f) << endl;
 	cout << "Side C = " << fltSideC << endl;
 
-	// If the resulting output is or is NOT a right triangle
+	// If the output is a right triangle!
 	if (fltSideC == pow(fltSideA, 2.0f) + pow(fltSideB, 2.0f)) {
 		cout << "\nThe result is a right triangle!" << endl;
 	}
+
+	// If a value less than or equal to 0 is entered on any side!
+	else if (fltSideA <= 0.0f || fltSideB <= 0.0f || fltSideC <= 0.0f) {
+		cerr << "\nInvalid input(s) has/have been detected!";
+			return 1;
+	}
+
+	// If the output is not a right triangle!
 	else
 		cout << "\nThe result is NOT a right triangle!" << endl;	
 
