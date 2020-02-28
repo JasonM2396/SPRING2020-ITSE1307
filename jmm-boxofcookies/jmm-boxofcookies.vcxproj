@@ -23,9 +23,7 @@
     <ProjectGuid>{F244F75D-007E-44A9-846E-A1A6850F24EC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>jmmboxofcookies</RootNamespace>
-
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
-
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
