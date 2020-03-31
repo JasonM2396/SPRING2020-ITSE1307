@@ -17,10 +17,10 @@ int main()
 	std::cout << "Please enter an integer: ";
 	std::cin >> intNum;
 
-	std::stringstream ss;
-	ss << intNum;
+	std::stringstream ssNumConv;
+	ssNumConv << intNum;
 	std::string strDigits; // I was unable to get both numbers to display correcting without using strings, so converting the int to a string was the only way.
-	ss >> strDigits;
+	ssNumConv >> strDigits;
 
 	std::cout << std::endl;
 	std::cout << strDigits;
