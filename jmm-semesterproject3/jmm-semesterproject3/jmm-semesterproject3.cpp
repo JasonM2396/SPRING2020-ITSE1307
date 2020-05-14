@@ -54,7 +54,7 @@ int main()
 	int intCurrentRoomIndex = 0;
 	int intNumberOfRooms = 7;
 	int intNumberOfLives = intStartingNumberOfLives;
-	int intHighScore = 150;
+	int intHighScore = 100;
 	char chrMenuChoice = ' ';
 	char chrDirectionChoice = ' ';
 	std::string strAcceptedChoiceInRoom = "wasd0ict";
@@ -150,7 +150,7 @@ int main()
 
 
 				Room objRoom = vtrRoom.at(intCurrentRoomIndex);
-				std::cerr << objRoom.toString() << std::endl;
+	//			std::cerr << objRoom.toString() << std::endl;
 
 				//Loop for correct user input
 				do {
@@ -220,6 +220,9 @@ int main()
 					if (objRoom.getCoins() > 0) {
 						intNumberOfCoins += objRoom.getCoins();
 						std::cout << " you found " << objRoom.getCoins() << " coin(s)!";
+						if (intNumberOfCoins == 100) {
+							boolWinCondition = true;
+						}
 					}
 					else {
 						std::cout << " you end up with nothing.";
@@ -244,7 +247,7 @@ int main()
 			{
 				std::cout << "You lost... Game over!";
 				//	std::cout << "\nYour Total Score: " << calculateHighScore(intNumberOfItems, intNumberOfCoins);
-			} if (boolWinCondition == true) {
+			} if (boolWinCondition == true ) {
 				std::cout << "You have escaped the abandoned tunnel! Congratulations!" << std::endl;
 				std::cout << "\nYour Total Score: " << calculateHighScore(intNumberOfItems, intNumberOfCoins);
 			}
