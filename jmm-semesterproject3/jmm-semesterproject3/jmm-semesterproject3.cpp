@@ -1,6 +1,8 @@
-// semesterproject.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// jmm-semesterproject3.cpp : This file contains the 'main' function. Program execution begins and ends there.
 // By: ITSE 1307
+// Modified by: Jason Martinez
 // Date: 20200206
+// Date Finished: 5/14/20
 // Description: This the main for a text based adventure dungeon crawler
 
 #include "stdafx.h"
@@ -246,10 +248,14 @@ int main()
 			if (intNumberOfLives == 0)
 			{
 				std::cout << "You lost... Game over!";
-				//	std::cout << "\nYour Total Score: " << calculateHighScore(intNumberOfItems, intNumberOfCoins);
+				std::cout << "\nYour Total Score: " << calculateHighScore(intNumberOfItems, intNumberOfCoins);
+				std::cout << "\nHigh Score: " << determineHighScore(intHighScore, calculateHighScore(intNumberOfItems, intNumberOfCoins));
+				std::cout << std::endl;
 			} if (boolWinCondition == true ) {
 				std::cout << "You have escaped the abandoned tunnel! Congratulations!" << std::endl;
 				std::cout << "\nYour Total Score: " << calculateHighScore(intNumberOfItems, intNumberOfCoins);
+				std::cout << "\nHigh Score: " << determineHighScore(intHighScore, calculateHighScore(intNumberOfItems, intNumberOfCoins));
+				std::cout << std::endl;
 			}
 
 			break;
